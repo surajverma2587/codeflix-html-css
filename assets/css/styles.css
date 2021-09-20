@@ -134,6 +134,12 @@ body {
   margin: 2rem;
 }
 
+.movie-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 @media screen and (max-width: 576px) {
   .nav-container {
     flex-direction: column;
