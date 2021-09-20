@@ -69,10 +69,24 @@ body {
     url("../images/banner.jpeg");
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 
 .banner:hover {
   background-image: url("../images/banner.jpeg");
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 500;
+  color: var(--font-info);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 576px) {
