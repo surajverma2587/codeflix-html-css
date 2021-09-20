@@ -16,10 +16,6 @@ body {
   line-height: 1.2;
   color: #fff;
   font-size: 10px;
-  /* background-color: var(--dark); */
-}
-
-header {
   background-color: var(--dark);
 }
 
@@ -61,6 +57,22 @@ header {
 .thumbnail-image {
   width: 3.2rem;
   height: 3.2rem;
+}
+
+.banner {
+  height: 380px;
+  background-image: linear-gradient(
+      to top,
+      rgb(20, 20, 20, 0.7),
+      rgba(133, 133, 133, 0.2)
+    ),
+    url("../images/banner.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+.banner:hover {
+  background-image: url("../images/banner.jpeg");
 }
 
 @media screen and (max-width: 576px) {
