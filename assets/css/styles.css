@@ -1,5 +1,7 @@
 :root {
   --dark: #141414;
+  --font-info: #e5e5e5;
+  --font-hover: #e5e5e5be;
 }
 
 * {
@@ -14,5 +16,49 @@ body {
   line-height: 1.2;
   color: #fff;
   font-size: 10px;
+  /* background-color: var(--dark); */
+}
+
+header {
   background-color: var(--dark);
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links-container {
+  display: flex;
+  flex: 2;
+}
+
+.nav-link {
+  margin: 1.6rem;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: var(--font-info);
+  font-size: 1.4rem;
+}
+
+.nav-link a:hover {
+  color: var(--font-hover);
+}
+
+.nav-links-profile {
+  margin: 1.6rem;
+}
+
+.thumbnail-image:hover {
+  border: 1px solid white;
+}
+
+.thumbnail-image {
+  width: 3.2rem;
+  height: 3.2rem;
 }
