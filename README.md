@@ -15,6 +15,12 @@ You can view the GitHub pages deployed application [here](https://surajverma2587
 - CSS animations
 - Font Awesome
 
+## Design
+
+We are tasked to ensure that the website uses the image below as a design reference.
+
+![codeflix deisgn](./assets/images/designs/final_design.png)
+
 ## Screenshots
 
 ### Layout Designs
