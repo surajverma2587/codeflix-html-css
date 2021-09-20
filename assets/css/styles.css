@@ -121,6 +121,19 @@ body {
   letter-spacing: 0.4rem;
 }
 
+.movies-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-card {
+  border: 0.1rem solid var(--font-info);
+  width: 20rem;
+  margin: 2rem;
+}
+
 @media screen and (max-width: 576px) {
   .nav-container {
     flex-direction: column;
