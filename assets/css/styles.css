@@ -53,7 +53,7 @@ body {
 }
 
 .thumbnail-image:hover {
-  border: 1px solid white;
+  border: 0.1rem solid white;
 }
 
 .thumbnail-image {
@@ -62,7 +62,7 @@ body {
 }
 
 .banner {
-  height: 380px;
+  height: 38rem;
   background-image: linear-gradient(
       to top,
       rgb(20, 20, 20, 0.7),
@@ -82,7 +82,7 @@ body {
   font-size: 5rem;
   font-weight: 500;
   color: var(--font-info);
-  letter-spacing: 4px;
+  letter-spacing: 0.4rem;
   text-transform: uppercase;
   margin: 0;
   position: absolute;
@@ -111,6 +111,14 @@ body {
 
 .btn:hover {
   background-color: var(--primary-btn-hover);
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--font-info);
+  letter-spacing: 0.4rem;
 }
 
 @media screen and (max-width: 576px) {
