@@ -2,6 +2,8 @@
   --dark: #141414;
   --font-info: #e5e5e5;
   --font-hover: #e5e5e5be;
+  --primary-btn: #e5091499;
+  --primary-btn-hover: #e50914;
 }
 
 * {
@@ -88,6 +90,27 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   animation: moveInFromTopWithBounce 1s ease-out;
+}
+
+.banner-info {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  min-width: 20rem;
+  padding: 2rem;
+  background-color: var(--primary-btn);
+  border-radius: 4rem;
+  color: var(--font-info);
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.btn:hover {
+  background-color: var(--primary-btn-hover);
 }
 
 @media screen and (max-width: 576px) {
