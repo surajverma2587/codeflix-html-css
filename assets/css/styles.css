@@ -164,6 +164,13 @@ body {
   color: var(--dark);
 }
 
+.movie-card:hover {
+  animation: grow 0.5s ease-out;
+  cursor: pointer;
+  transform: scale(1.4);
+  z-index: 2;
+}
+
 @media screen and (max-width: 576px) {
   .nav-container {
     flex-direction: column;
@@ -186,5 +193,15 @@ body {
 
   100% {
     top: 40%;
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.4);
   }
 }
