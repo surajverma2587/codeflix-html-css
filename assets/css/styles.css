@@ -87,6 +87,7 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: moveInFromTopWithBounce 1s ease-out;
 }
 
 @media screen and (max-width: 576px) {
@@ -97,5 +98,19 @@ body {
   .nav-links-container {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@keyframes moveInFromTopWithBounce {
+  0% {
+    top: 0%;
+  }
+
+  75% {
+    top: 45%;
+  }
+
+  100% {
+    top: 40%;
   }
 }
