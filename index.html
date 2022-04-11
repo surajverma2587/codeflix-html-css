@@ -4,10 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      contents="Watch movies and tv shows on all devices for free"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Codeflix - Movies and TV Shows" />
+    <meta
+      property="og:description"
+      content="Watch movies and tv shows on all devices for free"
+    />
+    <meta
+      property="og:url"
+      content="https://surajverma2587.github.io/codeflix-html-css/"
+    />
+    <title>Codeflix - Movies and TV Shows</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/images/favicons/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>Home - Codeflix</title>
   </head>
   <body>
+    <!-- webpage header with navigation bar -->
     <header class="header">
       <!-- webpage navigation bar -->
       <nav class="nav-container">
@@ -34,25 +74,30 @@
         </div>
 
         <!-- div containing the profile icon -->
-        <div class="nav-links-profile">
+        <div class="nav-link">
           <a href="#">
             <img
               src="./assets/images/profile.png"
               alt="user profile red smiley face"
-              class="thumbnail-image"
             />
           </a>
         </div>
       </nav>
     </header>
+
+    <!-- webpage banner with image -->
     <div class="banner">
       <h1 class="title">Codeflix</h1>
       <div class="banner-info"><a class="btn">Explore Now</a></div>
     </div>
+
+    <!-- webpage main content containing movies -->
     <main>
+      <!-- UK top 5 movies section -->
       <section>
         <h2 class="sub-title">UK Top 5</h2>
         <div class="movies-container">
+          <!-- Gemini Man movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BZDJlYzMyZTctYzBiMi00Y2E5LTk4YzgtNzU5YzE0MDZkY2EwXkEyXkFqcGdeQXVyMTA3MTA4Mzgw._V1_SX300.jpg"
@@ -60,44 +105,75 @@
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Gemini Man</h2>
+              <h3><i class="fas fa-clock"></i>2h 15m</h3>
+            </div>
           </div>
+
+          <!-- Matrix movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
+              alt="matrix movie 2019"
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Matrix</h2>
+              <h3><i class="fas fa-clock"></i>2h 45m</h3>
+            </div>
           </div>
+
+          <!-- Toy Story movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
+              alt="toy story movie 2019"
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Toy Story</h2>
+              <h3><i class="fas fa-clock"></i>1h 45m</h3>
+            </div>
           </div>
+
+          <!-- Back to the Future movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
+              alt="back to the future movie 2019"
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Back to the Future</h2>
+              <h3><i class="fas fa-clock"></i>2h 05m</h3>
+            </div>
           </div>
+
+          <!-- Star Wars movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
+              alt="star wars movie 2019"
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Star Wars</h2>
+              <h3><i class="fas fa-clock"></i>2h 58m</h3>
+            </div>
           </div>
         </div>
       </section>
+
+      <!-- Popular movies section -->
       <section>
         <h2 class="sub-title">Popular</h2>
         <div class="movies-container">
+          <!-- Gemini Man movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BZDJlYzMyZTctYzBiMi00Y2E5LTk4YzgtNzU5YzE0MDZkY2EwXkEyXkFqcGdeQXVyMTA3MTA4Mzgw._V1_SX300.jpg"
@@ -105,39 +181,69 @@
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Gemini Man</h2>
+              <h3><i class="fas fa-clock"></i>2h 15m</h3>
+            </div>
           </div>
+
+          <!-- Matrix movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
+              alt="matrix movie 2019"
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Matrix</h2>
+              <h3><i class="fas fa-clock"></i>2h 45m</h3>
+            </div>
           </div>
+
+          <!-- Toy Story movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
+              alt="toy story movie 2019"
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Toy Story</h2>
+              <h3><i class="fas fa-clock"></i>1h 45m</h3>
+            </div>
           </div>
+
+          <!-- Back to the Future movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
+              alt="back to the future movie 2019"
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Back to the Future</h2>
+              <h3><i class="fas fa-clock"></i>2h 05m</h3>
+            </div>
           </div>
+
+          <!-- Star Wars movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
+              alt="star wars movie 2019"
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Star Wars</h2>
+              <h3><i class="fas fa-clock"></i>2h 58m</h3>
+            </div>
           </div>
+
+          <!-- Gemini Man movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BZDJlYzMyZTctYzBiMi00Y2E5LTk4YzgtNzU5YzE0MDZkY2EwXkEyXkFqcGdeQXVyMTA3MTA4Mzgw._V1_SX300.jpg"
@@ -145,39 +251,69 @@
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Gemini Man</h2>
+              <h3><i class="fas fa-clock"></i>2h 15m</h3>
+            </div>
           </div>
+
+          <!-- Matrix movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
+              alt="matrix movie 2019"
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Matrix</h2>
+              <h3><i class="fas fa-clock"></i>2h 45m</h3>
+            </div>
           </div>
+
+          <!-- Toy Story movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
+              alt="toy story movie 2019"
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Toy Story</h2>
+              <h3><i class="fas fa-clock"></i>1h 45m</h3>
+            </div>
           </div>
+
+          <!-- Back to the Future movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
+              alt="back to the future movie 2019"
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Back to the Future</h2>
+              <h3><i class="fas fa-clock"></i>2h 05m</h3>
+            </div>
           </div>
+
+          <!-- Star Wars movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
+              alt="star wars movie 2019"
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Star Wars</h2>
+              <h3><i class="fas fa-clock"></i>2h 58m</h3>
+            </div>
           </div>
+
+          <!-- Gemini Man movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BZDJlYzMyZTctYzBiMi00Y2E5LTk4YzgtNzU5YzE0MDZkY2EwXkEyXkFqcGdeQXVyMTA3MTA4Mzgw._V1_SX300.jpg"
@@ -185,39 +321,69 @@
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Gemini Man</h2>
+              <h3><i class="fas fa-clock"></i>2h 15m</h3>
+            </div>
           </div>
+
+          <!-- Matrix movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
+              alt="matrix movie 2019"
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Matrix</h2>
+              <h3><i class="fas fa-clock"></i>2h 45m</h3>
+            </div>
           </div>
+
+          <!-- Toy Story movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
+              alt="toy story movie 2019"
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Toy Story</h2>
+              <h3><i class="fas fa-clock"></i>1h 45m</h3>
+            </div>
           </div>
+
+          <!-- Back to the Future movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
+              alt="back to the future movie 2019"
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Back to the Future</h2>
+              <h3><i class="fas fa-clock"></i>2h 05m</h3>
+            </div>
           </div>
+
+          <!-- Star Wars movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
+              alt="star wars movie 2019"
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Star Wars</h2>
+              <h3><i class="fas fa-clock"></i>2h 58m</h3>
+            </div>
           </div>
+
+          <!-- Gemini Man movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BZDJlYzMyZTctYzBiMi00Y2E5LTk4YzgtNzU5YzE0MDZkY2EwXkEyXkFqcGdeQXVyMTA3MTA4Mzgw._V1_SX300.jpg"
@@ -225,118 +391,66 @@
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Gemini Man</h2>
+              <h3><i class="fas fa-clock"></i>2h 15m</h3>
+            </div>
           </div>
+
+          <!-- Matrix movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
+              alt="matrix movie 2019"
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Matrix</h2>
+              <h3><i class="fas fa-clock"></i>2h 45m</h3>
+            </div>
           </div>
+
+          <!-- Toy Story movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
+              alt="toy story movie 2019"
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Toy Story</h2>
+              <h3><i class="fas fa-clock"></i>1h 45m</h3>
+            </div>
           </div>
+
+          <!-- Back to the Future movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
+              alt="back to the future movie 2019"
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Back to the Future</h2>
+              <h3><i class="fas fa-clock"></i>2h 05m</h3>
+            </div>
           </div>
+
+          <!-- Star Wars movie card -->
           <div class="movie-card">
             <img
               src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
+              alt="star wars movie 2019"
             />
             <div class="movie-year">2019</div>
             <div class="movie-price">$</div>
-          </div>
-          <div class="movie-card">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BZDJlYzMyZTctYzBiMi00Y2E5LTk4YzgtNzU5YzE0MDZkY2EwXkEyXkFqcGdeQXVyMTA3MTA4Mzgw._V1_SX300.jpg"
-              alt="gemini man movie 2019"
-            />
-            <div class="movie-year">2019</div>
-            <div class="movie-price">$</div>
-          </div>
-          <div class="movie-card">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
-            />
-            <div class="movie-year">2019</div>
-            <div class="movie-price">$</div>
-          </div>
-          <div class="movie-card">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
-            />
-            <div class="movie-year">2019</div>
-            <div class="movie-price">$</div>
-          </div>
-          <div class="movie-card">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
-            />
-            <div class="movie-year">2019</div>
-            <div class="movie-price">$</div>
-          </div>
-          <div class="movie-card">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
-            />
-            <div class="movie-year">2019</div>
-            <div class="movie-price">$</div>
-          </div>
-          <div class="movie-card">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BZDJlYzMyZTctYzBiMi00Y2E5LTk4YzgtNzU5YzE0MDZkY2EwXkEyXkFqcGdeQXVyMTA3MTA4Mzgw._V1_SX300.jpg"
-              alt="gemini man movie 2019"
-            />
-            <div class="movie-year">2019</div>
-            <div class="movie-price">$</div>
-          </div>
-          <div class="movie-card">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
-            />
-            <div class="movie-year">2019</div>
-            <div class="movie-price">$</div>
-          </div>
-          <div class="movie-card">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
-            />
-            <div class="movie-year">2019</div>
-            <div class="movie-price">$</div>
-          </div>
-          <div class="movie-card">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
-            />
-            <div class="movie-year">2019</div>
-            <div class="movie-price">$</div>
-          </div>
-          <div class="movie-card">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
-              alt="gemini man movie 2019"
-            />
-            <div class="movie-year">2019</div>
-            <div class="movie-price">$</div>
+            <div class="movie-info">
+              <h2>Star Wars</h2>
+              <h3><i class="fas fa-clock"></i>2h 58m</h3>
+            </div>
           </div>
         </div>
       </section>

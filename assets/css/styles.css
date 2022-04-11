@@ -1,5 +1,6 @@
 :root {
   --dark: #141414;
+  --dark-rgb: 20, 20, 20;
   --font-info: #e5e5e5;
   --font-hover: #e5e5e5be;
   --primary-btn: #e5091499;
@@ -25,7 +26,7 @@ body {
 .header {
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 4;
   width: 100%;
   height: 6.8rem;
   background-color: var(--dark);
@@ -41,7 +42,8 @@ body {
 
 .nav-links-container {
   display: flex;
-  flex: 2;
+  flex-direction: row;
+  /* flex: 2; */
 }
 
 .nav-link {
@@ -58,17 +60,13 @@ body {
   color: var(--font-hover);
 }
 
-.nav-links-profile {
-  margin: 1.6rem;
-}
-
-.thumbnail-image:hover {
-  border: 0.1rem solid white;
-}
-
-.thumbnail-image {
+.nav-link img {
   width: 3.2rem;
   height: 3.2rem;
+}
+
+.nav-link img:hover {
+  border: 0.1rem solid white;
 }
 
 .banner {
@@ -121,6 +119,7 @@ body {
 
 .btn:hover {
   background-color: var(--primary-btn-hover);
+  cursor: pointer;
 }
 
 .sub-title {
@@ -153,7 +152,8 @@ body {
 
 .movie-year {
   position: absolute;
-  bottom: 0;
+  top: 0;
+  left: 0;
   padding: 0.8rem;
   background-color: var(--primary-btn-hover);
   font-size: 1.4rem;
@@ -163,7 +163,7 @@ body {
 
 .movie-price {
   position: absolute;
-  bottom: 0;
+  top: 0;
   right: 0;
   padding: 0.8rem;
   background-color: var(--movie-price);
@@ -173,11 +173,38 @@ body {
   color: var(--dark);
 }
 
+.movie-info {
+  display: none;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(var(--dark-rgb), 0.6);
+  color: var(--font-info);
+  padding-bottom: 20px;
+}
+
+.movie-info i {
+  margin-right: 8px;
+}
+
+.movie-info h2,
+.movie-info h3 {
+  text-align: center;
+  margin: 0;
+  padding: 10px 0px;
+  text-transform: uppercase;
+}
+
 .movie-card:hover {
   animation: grow 0.5s ease-out;
   cursor: pointer;
-  transform: scale(1.4);
+  transform: scale(1.2);
   z-index: 2;
+}
+
+.movie-card:hover .movie-info {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 @media screen and (max-width: 576px) {
@@ -220,6 +247,20 @@ body {
   }
 
   100% {
-    transform: scale(1.4);
+    transform: scale(1.2);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    background-color: rgb(var(--dark-rgb), 1);
+  }
+
+  50% {
+    background-color: rgb(var(--dark-rgb), 0.8);
+  }
+
+  100% {
+    background-color: rgb(var(--dark-rgb), 0.6);
   }
 }
